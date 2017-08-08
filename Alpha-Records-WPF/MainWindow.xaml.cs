@@ -24,5 +24,25 @@ namespace Alpha_Records_WPF
         {
             InitializeComponent();
         }
+
+        private void Ranks_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Presentation_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Library_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Students_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
