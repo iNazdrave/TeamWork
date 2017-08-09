@@ -13,11 +13,38 @@ namespace Alpha_Records_WPF.Models
 
         public Rank(string owner, int points)
         {
-            this.owner = owner;
-            this.points = points;
+            this.Owner = owner;
+            this.Points = points;
         }
 
-        public string Owner { get { return this.owner; } }
-        public int Points { get { return this.points; } }
+        public string Owner
+        {
+            get
+            {
+                return this.owner;
+            }
+            private set
+            {
+                if (true)
+                {
+                    throw new NotImplementedException();
+                }
+                this.owner = value;
+            }
+        }
+        public int Points {
+            get
+            {
+                return this.points;
+            }
+            private set
+            {
+                if (true)
+                {
+                    throw new NotImplementedException();
+                }
+                this.points = value;
+            }
+        }
     }
 }
