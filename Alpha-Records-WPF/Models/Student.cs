@@ -1,10 +1,7 @@
 ﻿using Alpha_Records_WPF.Contract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Alpha_Records_WPF.Contracts;
+using Alpha_Records_WPF.Utils;
+using System.Collections.Generic;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -24,8 +21,6 @@ namespace Alpha_Records_WPF.Models
         private IEnumerable<IPresentation> presentations;
         private ITeam team;
 
-
-
         public IBook Book
         {
             get
@@ -34,10 +29,7 @@ namespace Alpha_Records_WPF.Models
             }
             private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Book)));
                 this.book = value;
             }
         }
@@ -50,10 +42,7 @@ namespace Alpha_Records_WPF.Models
             }
             private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.ContactInfo)));
                 this.contactInfo = value;
             }
         }
@@ -66,10 +55,7 @@ namespace Alpha_Records_WPF.Models
             }
             private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Presentations)));
                 this.presentations = value;
             }
         }
@@ -82,10 +68,7 @@ namespace Alpha_Records_WPF.Models
             }
             private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Team)));
                 this.team = value;
             }
         }

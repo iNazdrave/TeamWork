@@ -1,9 +1,6 @@
 ﻿using Alpha_Records_WPF.Contract;
+using Alpha_Records_WPF.Utils;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -27,7 +24,7 @@ namespace Alpha_Records_WPF.Models
 
             set
             {
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Date)));
             }
         }
 
@@ -40,7 +37,7 @@ namespace Alpha_Records_WPF.Models
 
             set
             {
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Topic)));
             }
         }
     }

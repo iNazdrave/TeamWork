@@ -1,9 +1,5 @@
 ﻿using Alpha_Records_WPF.Contract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -21,7 +17,7 @@ namespace Alpha_Records_WPF.Models
             }
             set
             {
-                //valid;
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Status)));
                 this.status = value;
             }
         }
@@ -34,7 +30,7 @@ namespace Alpha_Records_WPF.Models
             }
             set
             {
-                //valid;
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.TakenOn)));
                 this.takenOn = value;
             }
         }
@@ -48,7 +44,7 @@ namespace Alpha_Records_WPF.Models
             }
             set
             {
-                //valid;
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.TakenBy)));
                 this.takenBy = value;
             }
         }

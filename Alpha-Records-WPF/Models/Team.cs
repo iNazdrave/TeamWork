@@ -1,9 +1,6 @@
 ﻿using Alpha_Records_WPF.Contract;
-using System;
+using Alpha_Records_WPF.Utils;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -15,10 +12,8 @@ namespace Alpha_Records_WPF.Models
             this.Members = members;
         }
 
-
         private IEnumerable<IStudent> members;
         private string name;
-
 
         public IEnumerable<IStudent> Members
         {
@@ -29,10 +24,7 @@ namespace Alpha_Records_WPF.Models
 
              private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Members)));
                 this.members = value;
             }
         }
@@ -46,10 +38,7 @@ namespace Alpha_Records_WPF.Models
 
            private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Name)));
                 this.name = value;
             }
         }

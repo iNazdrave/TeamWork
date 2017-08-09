@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -25,24 +21,19 @@ namespace Alpha_Records_WPF.Models
             }
             private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Owner)));
                 this.owner = value;
             }
         }
-        public int Points {
+        public int Points
+        {
             get
             {
                 return this.points;
             }
             private set
             {
-                if (true)
-                {
-                    throw new NotImplementedException();
-                }
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Points)));
                 this.points = value;
             }
         }

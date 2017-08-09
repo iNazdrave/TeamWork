@@ -1,9 +1,5 @@
 ﻿using Alpha_Records_WPF.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Model
 {
@@ -18,7 +14,7 @@ namespace Alpha_Records_WPF.Model
         {
             this.Name = name;
             this.Username = username;
-            this.Email = email;
+            this.EMail = email;
             this.PhoneNumber = phoneNumber;
         }
 
@@ -31,7 +27,7 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Name)));
             }
         }
 
@@ -44,7 +40,7 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Username)));
             }
         }
 
@@ -57,7 +53,7 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.EMail)));
             }
         }
 
@@ -70,7 +66,7 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.PhoneNumber)));
             }
         }        
     }
