@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace Alpha_Records_WPF.Models
 {
-    class Book : IBook
+    public class Book : IBook
     {
+        public string Title { get; set; }
+
+        public string Autor { get; set; }
+
+        public string Language { get; set; }
     }
 }

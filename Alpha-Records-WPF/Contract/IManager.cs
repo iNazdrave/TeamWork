@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Alpha_Records_WPF.Contract
 {
-    public interface IBook
+    interface IManagerBook
     {
-        string Title { get; }
+        bool Status { get; set; }
 
-        string Autor { get; }
+        string TakenOn { get; set; }
 
-        string Language { get; }
-
+        string TakenBy { get; set; }
     }
 }

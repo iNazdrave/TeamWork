@@ -63,8 +63,11 @@
     </Compile>
     <Compile Include="Contract\IBook.cs" />
     <Compile Include="Contract\IContactInfo.cs" />
+    <Compile Include="Contract\IManager.cs" />
     <Compile Include="Contract\IPresentation.cs" />
     <Compile Include="Contract\IStudent.cs" />
+    <Compile Include="Enum\BookStatus.cs" />
+    <Compile Include="Enum\Languages.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -73,9 +76,11 @@
   <ItemGroup>
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\ContactInfo.cs" />
+    <Compile Include="Models\ManagedBook.cs" />
     <Compile Include="Models\Presentation.cs" />
     <Compile Include="Models\Rank.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
