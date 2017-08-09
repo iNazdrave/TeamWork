@@ -8,7 +8,7 @@ namespace Alpha_Records_WPF.Contract
 {
     interface IManagerBook
     {
-        bool Status { get; set; }
+        string Status { get; set; }
 
         string TakenOn { get; set; }
 
