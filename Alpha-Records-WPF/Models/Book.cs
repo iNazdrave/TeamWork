@@ -15,9 +15,9 @@ namespace Alpha_Records_WPF.Models
 
         public Book(string title, string autor, string language)
         {
-            this.title = title;
-            this.autor = autor;
-            this.language = language;
+            this.Title = title;
+            this.Autor = autor;
+            this.Language = language;
         }
 
         public string Title
