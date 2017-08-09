@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alpha_Records_WPF.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace Alpha_Records_WPF.Contract
 {
     public interface IStudent
     {
+        
     }
 }

@@ -53,6 +53,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\Validator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,7 +65,7 @@
     </Compile>
     <Compile Include="Contract\IBook.cs" />
     <Compile Include="Contract\IContactInfo.cs" />
-    <Compile Include="Contract\IManager.cs" />
+    <Compile Include="Contract\IManagerBook.cs" />
     <Compile Include="Contract\IPresentation.cs" />
     <Compile Include="Contract\IStudent.cs" />
     <Compile Include="Enum\BookStatus.cs" />
