@@ -1,0 +1,10 @@
+diff a/Alpha-Records-WPF/Models/ContactInfo.cs b/Alpha-Records-WPF/Models/ContactInfo.cs	(rejected hunks)
+@@ -27,7 +27,7 @@
+ 
+             private set
+             {
+-                throw new NotImplementedException();
++                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Name)));
+             }
+         }
+ 
