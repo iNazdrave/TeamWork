@@ -14,8 +14,8 @@ namespace Alpha_Records_WPF.Models
 
         public Presentation(DateTime date, string topic)
         {
-            this.date = date;
-            this.topic = topic;
+            this.Date = date;
+            this.Topic = topic;
         }
 
         public DateTime Date
