@@ -97,12 +97,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup>
-    <Folder Include="Contracts\" />
-  </ItemGroup>
-=======
-  <ItemGroup />
->>>>>>> refs/remotes/origin/master
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
