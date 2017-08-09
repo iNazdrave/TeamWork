@@ -14,7 +14,7 @@ namespace Alpha_Records_WPF.Model
         {
             this.Name = name;
             this.Username = username;
-            this.EMail = email;
+            this.Email = email;
             this.PhoneNumber = phoneNumber;
         }
 
@@ -27,12 +27,8 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-<<<<<<< HEAD
                 Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Name)));
-=======
-                throw new NotImplementedException();
                 this.name = value;
->>>>>>> ec52b6c66d993e7eb8202a592ecfc6902b64bb06
             }
         }
 
@@ -45,13 +41,8 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-<<<<<<< HEAD
                 Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Username)));
-=======
-                throw new NotImplementedException();
                 this.username = value;
-
->>>>>>> ec52b6c66d993e7eb8202a592ecfc6902b64bb06
             }
         }
 
@@ -64,16 +55,10 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-<<<<<<< HEAD
-                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.EMail)));
-=======
-                throw new NotImplementedException();
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Email)));
                 this.email = value;
->>>>>>> ec52b6c66d993e7eb8202a592ecfc6902b64bb06
             }
         }
-
-        public string EMail => throw new NotImplementedException();
 
         public string PhoneNumber
         {
@@ -84,12 +69,8 @@ namespace Alpha_Records_WPF.Model
 
             private set
             {
-<<<<<<< HEAD
                 Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.PhoneNumber)));
-=======
-                throw new NotImplementedException();
                 this.phoneNumber = value;
->>>>>>> ec52b6c66d993e7eb8202a592ecfc6902b64bb06
             }
         }        
     }
