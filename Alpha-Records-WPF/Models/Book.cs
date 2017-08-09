@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alpha_Records_WPF.Models
 {
-    public class Student : IStudent
+    class Book : IBook
     {
     }
 }
