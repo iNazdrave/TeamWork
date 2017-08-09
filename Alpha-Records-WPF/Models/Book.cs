@@ -9,10 +9,53 @@ namespace Alpha_Records_WPF.Models
 {
     public class Book : IBook
     {
-        public string Title { get; set; }
+        private string title;
+        private string autor;
+        private string language;
 
-        public string Autor { get; set; }
+        public Book(string title, string autor, string language)
+        {
+            this.title = title;
+            this.autor = autor;
+            this.language = language;
+        }
 
-        public string Language { get; set; }
+        public string Title
+        {
+            get
+            {
+                return this.title;
+            }
+            private set
+            {
+                //valid
+                this.title = value;
+            }
+        }
+        public string Autor
+        {
+            get
+            {
+                return this.autor;
+            }
+            private set
+            {
+                //valid
+                this.autor = value;
+            }
+        }
+        public string Language
+        {
+            get
+            {
+                return this.language;
+            }
+            private set
+            {
+                //valid
+                this.language = value;
+            }
+        }
+
     }
 }
