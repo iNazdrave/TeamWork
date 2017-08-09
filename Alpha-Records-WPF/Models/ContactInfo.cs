@@ -29,7 +29,7 @@ namespace Alpha_Records_WPF.Model
                 return this.name;
             }
 
-            set
+            private set
             {
                 throw new NotImplementedException();
             }
@@ -42,7 +42,7 @@ namespace Alpha_Records_WPF.Model
                 return this.username;
             }
 
-            set
+            private set
             {
                 throw new NotImplementedException();
             }
@@ -55,7 +55,7 @@ namespace Alpha_Records_WPF.Model
                 return this.email;
             }
 
-            set
+            private set
             {
                 throw new NotImplementedException();
             }
@@ -68,7 +68,7 @@ namespace Alpha_Records_WPF.Model
                 return this.phoneNumber;
             }
 
-            set
+            private set
             {
                 throw new NotImplementedException();
             }
