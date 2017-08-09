@@ -61,6 +61,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Contract\IBook.cs" />
     <Compile Include="Contract\IContactInfo.cs" />
     <Compile Include="Contract\IPresentation.cs" />
     <Compile Include="Contract\IStudent.cs" />
