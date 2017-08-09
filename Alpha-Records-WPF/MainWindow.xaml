@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Alpha_Records_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="462" Width="800">
+    <StackPanel 
+        Orientation="Horizontal">
+        <StackPanel
+        Name="NavigationPanel"
+        Orientation="Vertical">
+            <Button
+                x:Name="Ranks_Button"
+                Background="CadetBlue"
+                Content="Rankings"
+                Margin="4"
+                Width="200"
+                Height="100"
+                Click="Ranks_Button_Click"/>
+            <Button
+                x:Name="Presentation_Button"
+                Background="CadetBlue"
+                Content="Presentations?"
+                Margin="4"
+                Width="200"
+                Height="100"
+                Click="Presentation_Button_Click"/>
+            <Button
+                x:Name="Library_Button"
+                Background="CadetBlue"
+                Content="Library"
+                Margin="4"
+                Width="200"
+                Height="100"
+                Click="Library_Button_Click"/>
+            <Button
+                x:Name="Students_Button"
+                Background="CadetBlue"
+                Content="Students"
+                Margin="4"
+                Width="200"
+                Height="100"
+                Click="Students_Button_Click"/>
+        </StackPanel>
+        <ListBox 
+            Margin="4"
+            Width="280"
+            x:Name="Objects_List"/>
+        <ListBox 
+            Margin="4"
+            x:Name="Details_List"/>
+    </StackPanel>
 </Window>
