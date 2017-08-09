@@ -16,10 +16,10 @@ namespace Alpha_Records_WPF.Model
 
         public ContactInfo(string name, string username, string email, string phoneNumber)
         {
-            this.name = name;
-            this.username = username;
-            this.email = email;
-            this.phoneNumber = phoneNumber;
+            this.Name = name;
+            this.Username = username;
+            this.Email = email;
+            this.PhoneNumber = phoneNumber;
         }
 
         public string Name
