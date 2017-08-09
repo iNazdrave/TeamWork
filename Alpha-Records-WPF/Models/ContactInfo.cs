@@ -32,6 +32,7 @@ namespace Alpha_Records_WPF.Model
             private set
             {
                 throw new NotImplementedException();
+                this.name = value;
             }
         }
 
@@ -45,10 +46,12 @@ namespace Alpha_Records_WPF.Model
             private set
             {
                 throw new NotImplementedException();
+                this.username = value;
+
             }
         }
 
-        public string EMail
+        public string Email
         {
             get
             {
@@ -58,8 +61,11 @@ namespace Alpha_Records_WPF.Model
             private set
             {
                 throw new NotImplementedException();
+                this.email = value;
             }
         }
+
+        public string EMail => throw new NotImplementedException();
 
         public string PhoneNumber
         {
@@ -71,6 +77,7 @@ namespace Alpha_Records_WPF.Model
             private set
             {
                 throw new NotImplementedException();
+                this.phoneNumber = value;
             }
         }        
     }
