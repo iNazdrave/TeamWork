@@ -66,6 +66,7 @@
     <Compile Include="Contract\IManager.cs" />
     <Compile Include="Contract\IPresentation.cs" />
     <Compile Include="Contract\IStudent.cs" />
+    <Compile Include="Contract\ITeam.cs" />
     <Compile Include="Enum\BookStatus.cs" />
     <Compile Include="Enum\Languages.cs" />
     <Compile Include="MainWindow.xaml.cs">
