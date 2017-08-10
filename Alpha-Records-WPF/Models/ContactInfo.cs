@@ -1,7 +1,7 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
 
-namespace Alpha_Records_WPF.Model
+namespace Alpha_Records_WPF.Models
 {
     public class ContactInfo : IContactInfo
     {

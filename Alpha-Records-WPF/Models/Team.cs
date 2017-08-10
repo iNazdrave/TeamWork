@@ -1,4 +1,4 @@
-﻿using Alpha_Records_WPF.Contract;
+﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
 using System.Collections.Generic;
 

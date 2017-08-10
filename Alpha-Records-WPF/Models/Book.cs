@@ -1,4 +1,4 @@
-﻿using Alpha_Records_WPF.Contract;
+﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Models

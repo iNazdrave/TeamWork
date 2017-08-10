@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Alpha_Records_WPF.Contract
+namespace Alpha_Records_WPF.Contracts
 {
     public interface IPresentation
     {
