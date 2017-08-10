@@ -16,31 +16,16 @@ using System.Windows.Shapes;
 namespace Alpha_Records_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PageLogin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageLogin : Page
     {
-        public MainWindow()
+        public PageLogin()
         {
             InitializeComponent();
         }
 
-        private void Ranks_Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Presentation_Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Library_Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Students_Button_Click(object sender, RoutedEventArgs e)
+        private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
