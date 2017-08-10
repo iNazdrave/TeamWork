@@ -9,7 +9,7 @@ namespace Alpha_Records_WPF.DataLayer
 
         private SQLiteAdapter()
         {
-
+            //ai molq ti sa
         }
 
         public static SQLiteAdapter Instance
