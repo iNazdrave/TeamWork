@@ -22,7 +22,7 @@
             <Button
                 x:Name="Presentation_Button"
                 Background="CadetBlue"
-                Content="Presentations?"
+                Content="Presentations"
                 Margin="4"
                 Width="200"
                 Height="100"
@@ -47,7 +47,18 @@
         <ListBox 
             Margin="4"
             Width="280"
-            x:Name="Objects_List"/>
+            x:Name="Objects_List">
+            <ListBox.ItemTemplateSelector>
+                <DataTemplateSelector>
+                    
+                </DataTemplateSelector>
+            </ListBox.ItemTemplateSelector>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <ListBox 
             Margin="4"
             x:Name="Details_List"/>

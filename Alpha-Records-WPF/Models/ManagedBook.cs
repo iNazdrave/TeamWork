@@ -1,20 +1,21 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
+using System;
 
 namespace Alpha_Records_WPF.Models
 {
-    public class ManagedBook : Book, IManagedBook 
+    public class ManagedBook : Book, IManagedBook, IBook
     {
         private string status;
-        private string takenOn;
-        private string takenBy;
+        private DateTime takenOn;
+        private IStudent takenBy;
 
-        public ManagedBook(string title, string autor, string language) 
+        public ManagedBook(string title, string autor, string language, string status, DateTime takenOn, IStudent takenBy)
             : base(title, autor, language)
         {
-            this.Status = status;
-            this.TakenOn = takenOn;
-            this.TakenBy = takenBy;
+            Status = status;
+            TakenOn = takenOn;
+            TakenBy = takenBy;
         }
 
         public string Status
@@ -30,7 +31,7 @@ namespace Alpha_Records_WPF.Models
             }
         }
 
-        public string TakenOn
+        public DateTime TakenOn
         {
             get
             {
@@ -43,7 +44,7 @@ namespace Alpha_Records_WPF.Models
             }
         }
 
-        public string TakenBy
+        public IStudent TakenBy
         {
 
             get

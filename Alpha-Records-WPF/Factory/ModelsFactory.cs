@@ -5,14 +5,25 @@ using System.Collections.Generic;
 
 namespace Alpha_Records_WPF.Factory
 {
-    public class Factory
+    public class ModelsFactory
     {
-        public IManagerBook CreateManagedBook (string title, string autor, string language, string Status, string TakenOn, string TakenBy)
+        private static readonly ModelsFactory instance = new ModelsFactory();
+        private ModelsFactory() { }
+
+        public static ModelsFactory Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+        public IManagedBook CreateManagedBook(string title, string autor, string language, string Status, string TakenOn, string TakenBy)
         {
             return new ManagedBook(title, autor, language);
         }
 
-        public IContactInfo ContactInfo (string name, string username, string email, string phoneNumber)
+        public IContactInfo ContactInfo(string name, string username, string email, string phoneNumber)
         {
             return new ContactInfo(name, username, email, phoneNumber);
         }

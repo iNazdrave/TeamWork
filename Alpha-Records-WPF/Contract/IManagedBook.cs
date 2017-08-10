@@ -1,11 +1,13 @@
-﻿namespace Alpha_Records_WPF.Contracts
+﻿using System;
+
+namespace Alpha_Records_WPF.Contracts
 {
-    public interface IManagedBook
+    public interface IManagedBook : IBook
     {
         string Status { get; set; }
 
-        string TakenOn { get; set; }
+        DateTime TakenOn { get; set; }
 
-        string TakenBy { get; set; }
+        IStudent TakenBy { get; set; }
     }
 }

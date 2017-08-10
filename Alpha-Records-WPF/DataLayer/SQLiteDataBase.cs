@@ -1,4 +1,6 @@
 ﻿
+using SQLite;
+
 namespace Alpha_Records_WPF.DataLayer
 {
     class SQLiteDataBase
@@ -43,9 +45,9 @@ namespace Alpha_Records_WPF.DataLayer
             "(id int, " + COLUMN_LECTOR + " int, " +
             COLUMN_TOPIC + " text, " + COLUMN_DATE + " text)";
 
-        private const string TABLE_RANKS = "RANKS";
-        private const string COLUMN_OWNER = "owner";
-        private const string COLUMN_POINTS = "points";
+       //private const string TABLE_RANKS = "RANKS";
+       //private const string COLUMN_OWNER = "owner";
+       //private const string COLUMN_POINTS = "points";
 
         public SQLiteDataBase(SQLiteConnection conn)
         {
