@@ -3,11 +3,19 @@ using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Models
 {
-    public class ManagedBook : IManagerBook
+    public class ManagedBook : Book, IManagerBook 
     {
         private string status;
         private string takenOn;
         private string takenBy;
+
+        public ManagedBook(string title, string autor, string language) 
+            : base(title, autor, language)
+        {
+            this.Status = status;
+            this.TakenOn = takenOn;
+            this.TakenBy = takenBy;
+        }
 
         public string Status
         {
