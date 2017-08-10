@@ -15,7 +15,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Alpha_Records_WPF.Factory.Factory">
+  <Class Name="Alpha_Records_WPF.Factory.Factory" Collapsed="true">
     <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAQAAAAAAAAAAAAAIAAACAAAAAEAAAAAAAAAA=</HashCode>
@@ -30,7 +30,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Alpha_Records_WPF.Models.ContactInfo" BaseTypeListCollapsed="true">
+  <Class Name="Alpha_Records_WPF.Models.ContactInfo" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAgAQAAQAUAAEAEAAAAAAAAAAAAAAA=</HashCode>
@@ -46,7 +46,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Alpha_Records_WPF.Models.Presentation" BaseTypeListCollapsed="true">
+  <Class Name="Alpha_Records_WPF.Models.Presentation" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="4.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAASAAAAA=</HashCode>
@@ -55,14 +55,14 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Alpha_Records_WPF.Models.Rank" Collapsed="true">
-    <Position X="7.75" Y="4.75" Width="1.5" />
+    <Position X="6.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Rank.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Alpha_Records_WPF.Models.Student" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="6.5" Y="5.75" Width="1.5" />
+    <Position X="4.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAEABAAAAAQAIAAAASAAAAEAAAAAAAAAA=</HashCode>
       <FileName>Models\Student.cs</FileName>
@@ -70,7 +70,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Alpha_Records_WPF.Models.Team" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.75" Y="4.75" Width="1.5" />
+    <Position X="6.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAQAAAAEAAAAAAA=</HashCode>
       <FileName>Models\Team.cs</FileName>
@@ -78,13 +78,13 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Alpha_Records_WPF.Properties.Resources" Collapsed="true">
-    <Position X="10" Y="1.5" Width="1.5" />
+    <Position X="8.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="Alpha_Records_WPF.Properties.Settings" Collapsed="true">
-    <Position X="2.75" Y="2.25" Width="1.5" />
+    <Position X="3" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
@@ -92,19 +92,19 @@
   <Class Name="Alpha_Records_WPF.Utils.Constants" Collapsed="true">
     <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAAAQAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Utils\Constants.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Alpha_Records_WPF.Utils.Validator">
-    <Position X="10" Y="2.5" Width="1.5" />
+  <Class Name="Alpha_Records_WPF.Utils.Validator" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utils\Validator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Alpha_Records_WPF.Contracts.IBook">
-    <Position X="1" Y="3.25" Width="1.5" />
+  <Interface Name="Alpha_Records_WPF.Contracts.IBook" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contract\IBook.cs</FileName>
@@ -131,7 +131,7 @@
       <FileName>Contract\IPresentation.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Alpha_Records_WPF.Contracts.IStudent">
+  <Interface Name="Alpha_Records_WPF.Contracts.IStudent" Collapsed="true">
     <Position X="3" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAABAAAAAAAIAAAAAAAAAEAAAAAAAAAA=</HashCode>
