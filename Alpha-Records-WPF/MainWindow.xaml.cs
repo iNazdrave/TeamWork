@@ -1,6 +1,8 @@
-﻿using Alpha_Records_WPF.DataLayer.Contracts;
+﻿using Alpha_Records_WPF.Contracts;
+using Alpha_Records_WPF.DataLayer;
+using Alpha_Records_WPF.DataLayer.Contracts;
 using Alpha_Records_WPF.Factory;
-
+using System;
 using System.Collections.Generic;
 using System.Windows;
 
@@ -10,11 +12,13 @@ namespace Alpha_Records_WPF
     {
         private readonly ModelsFactory factory;
         private readonly  IEnumerable<IDataManager> dataManagers;
+        private readonly IDataManager dataManager;
 
         public MainWindow()
         {
             InitializeComponent();
             factory = ModelsFactory.Instance;
+            dataManager = new SQLiteFasade();
 
         }
 
@@ -38,5 +42,18 @@ namespace Alpha_Records_WPF
 
         }
 
+        public static string UpComingPresentation(IEnumerable<IPresentation> studentsListOPresentations, string message)
+        {
+            TimeSpan days = TimeSpan.Zero;
+            foreach (IPresentation presentation in studentsListOPresentations)
+            {               
+                if (DateTime.Today<presentation.Date)
+                {
+                    days = presentation.Date - DateTime.Now;
+                    break;                 
+                }
+            }
+            return string.Format("You have presentation in {0} days.", days.Days);
+        }
     }
 }
