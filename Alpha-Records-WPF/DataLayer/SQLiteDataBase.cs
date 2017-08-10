@@ -1,12 +1,4 @@
-﻿using Alpha_Records_WPF.Models;
-using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
+﻿
 namespace Alpha_Records_WPF.DataLayer
 {
     class SQLiteDataBase
@@ -66,8 +58,5 @@ namespace Alpha_Records_WPF.DataLayer
             var createPresentations = conn.CreateCommand(CREATE_PRESENTATIONS);
             createContactInfos.ExecuteNonQuery();
         }
-
-
-
     }
 }
