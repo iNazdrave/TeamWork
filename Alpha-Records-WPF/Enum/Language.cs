@@ -1,6 +1,6 @@
 ﻿namespace Alpha_Records_WPF.Enum
 {
-    public enum Languages
+    public enum Language
     {
         Bulgarian,
         English,

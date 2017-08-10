@@ -1,6 +1,6 @@
 ﻿namespace Alpha_Records_WPF.Contracts
 {
-    public interface IManagerBook
+    public interface IManagedBook
     {
         string Status { get; set; }
 

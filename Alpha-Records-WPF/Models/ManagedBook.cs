@@ -3,7 +3,7 @@ using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Models
 {
-    public class ManagedBook : Book, IManagerBook 
+    public class ManagedBook : Book, IManagedBook 
     {
         private string status;
         private string takenOn;

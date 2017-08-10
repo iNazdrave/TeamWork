@@ -66,12 +66,12 @@
     </Compile>
     <Compile Include="Contract\IBook.cs" />
     <Compile Include="Contract\IContactInfo.cs" />
-    <Compile Include="Contract\IManagerBook.cs" />
+    <Compile Include="Contract\IManagedBook.cs" />
     <Compile Include="Contract\IPresentation.cs" />
     <Compile Include="Contract\IStudent.cs" />
     <Compile Include="Contract\ITeam.cs" />
     <Compile Include="Enum\BookStatus.cs" />
-    <Compile Include="Enum\Languages.cs" />
+    <Compile Include="Enum\Language.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
