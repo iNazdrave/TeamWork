@@ -5,24 +5,20 @@ namespace Alpha_Records_WPF.DataLayer.Contracts
 {
     public interface IDataManager
     {
-        IEnumerable<IManagedBook> ManagedBooks { get; }
+        IEnumerable<IStudent> GetStudents();
 
-        void AddManagedBook(IManagedBook managedBook);
+        void AddOrUpdateStudent(IStudent student);
 
-        IEnumerable<IContactInfo> ContactInfos { get; }
+        IEnumerable<IContactInfo> GetContactInfos();
 
-        void AddContactInfo(IContactInfo contactInfo);
+        void AddOrUpdateContactInfo(IContactInfo contactInfo);
 
-        IEnumerable<IPresentation> Presentations { get; }
+        IEnumerable<IManagedBook> GetManagedBooks();
 
-        void AddPresentation(IPresentation presentation);
+        void AddOrUpdateManagedBook(IManagedBook managedBook);
 
-        IEnumerable<IStudent> Students { get; }
+        IEnumerable<IPresentation> GetPresentations();
 
-        void AddStudent(IStudent student);
-
-
-
-
+        void AddOrUpdatePresentation(IPresentation presentation);
     }
 }
