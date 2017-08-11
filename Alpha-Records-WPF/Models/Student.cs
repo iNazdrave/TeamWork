@@ -6,31 +6,17 @@ namespace Alpha_Records_WPF.Models
 {
     public class Student : IStudent
     {
-
-        public Student(IBook book,IContactInfo contactInfo,IEnumerable<IPresentation> presentations,ITeam team)
-        {
-            this.Team = team;
-            this.ContactInfo = contactInfo;
-            this.Presentations = presentations;
-            this.Team = team;
-        }
-
-        private IBook book;
         private IContactInfo contactInfo;
         private IEnumerable<IPresentation> presentations;
-        private ITeam team;
+        private IBook book;
+        private string team;
 
-        public IBook Book
+        public Student(IContactInfo contactInfo, IEnumerable<IPresentation> presentations, IBook book, string teamName)
         {
-            get
-            {
-                return this.book;
-            }
-            private set
-            {
-                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Book)));
-                this.book = value;
-            }
+            this.ContactInfo = contactInfo;
+            this.Presentations = presentations;
+            this.Book = book;
+            this.Team = teamName;
         }
 
         public IContactInfo ContactInfo
@@ -59,7 +45,19 @@ namespace Alpha_Records_WPF.Models
             }
         }
 
-        public ITeam Team
+        public IBook Book
+        {
+            get
+            {
+                return this.book;
+            }
+            set
+            {
+                this.book = value;
+            }
+        }
+
+        public string Team
         {
             get
             {

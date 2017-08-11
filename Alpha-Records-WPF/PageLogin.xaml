@@ -19,7 +19,8 @@
         <TextBlock Text="in.thecamp Password"/>
         <PasswordBox x:Name="inthecamp_pass"/>
 
-        <Button Content="Login"
-                Click="Login_Button_Click"/>
+        <Button 
+            Content="Login"
+            Click="Login_Button_Click"/>
     </StackPanel>
 </Page>

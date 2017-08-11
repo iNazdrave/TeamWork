@@ -70,10 +70,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Connectivity\Connection.cs" />
+    <Compile Include="Connectivity\Contract\IConnection.cs" />
     <Compile Include="DataLayer\Contracts\IDataManager.cs" />
+    <Compile Include="DataLayer\ExcelDataBase.cs" />
+    <Compile Include="DataLayer\ExcelManager.cs" />
+    <Compile Include="Factory\ConnectivityFactory.cs" />
     <Compile Include="Factory\ModelsFactory.cs" />
-    <Compile Include="DataLayer\SQLiteFasade.cs" />
+    <Compile Include="DataLayer\SQLiteManager.cs" />
     <Compile Include="DataLayer\SQLiteDataBase.cs" />
+    <Compile Include="Connectivity\Account.cs" />
     <Compile Include="PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
     </Compile>

@@ -6,13 +6,13 @@ namespace Alpha_Records_WPF.Models
     public class Book : IBook
     {
         private string title;
-        private string autor;
+        private string author;
         private string language;
 
-        public Book(string title, string autor, string language)
+        public Book(string title, string author, string language)
         {
             this.Title = title;
-            this.Autor = autor;
+            this.Author = author;
             this.Language = language;
         }
 
@@ -28,16 +28,16 @@ namespace Alpha_Records_WPF.Models
                 this.title = value;
             }
         }
-        public string Autor
+        public string Author
         {
             get
             {
-                return this.autor;
+                return this.author;
             }
             private set
             {
-                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Autor)));
-                this.autor = value;
+                Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Author)));
+                this.author = value;
             }
         }
         public string Language

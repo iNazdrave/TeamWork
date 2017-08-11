@@ -6,7 +6,7 @@ namespace Alpha_Records_WPF.Models
 {
     public class Team : ITeam
     {
-        public Team(string name,IEnumerable<IStudent> members)
+        public Team(string name, IEnumerable<IStudent> members)
         {
             this.Name = name;
             this.Members = members;
@@ -22,7 +22,7 @@ namespace Alpha_Records_WPF.Models
                 return this.members;
             }
 
-             private set
+            private set
             {
                 Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Members)));
                 this.members = value;
@@ -36,7 +36,7 @@ namespace Alpha_Records_WPF.Models
                 return this.name;
             }
 
-           private set
+            private set
             {
                 Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.Name)));
                 this.name = value;

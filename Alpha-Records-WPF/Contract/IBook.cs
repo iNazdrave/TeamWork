@@ -4,7 +4,7 @@
     {
         string Title { get; }
 
-        string Autor { get; }
+        string Author { get; }
 
         string Language { get; }
 

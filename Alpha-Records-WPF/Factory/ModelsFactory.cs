@@ -18,32 +18,32 @@ namespace Alpha_Records_WPF.Factory
             }
         }
 
-        public IManagedBook CreateManagedBook(string title, string autor, string language, string Status, string TakenOn, string TakenBy)
+        public IManagedBook CreateManagedBook(string title, string autor, string language, string status, DateTime takenOn, string takenBy)
         {
-            return new ManagedBook(title, autor, language);
+            return new ManagedBook(title, autor, language, status, takenOn, takenBy);
         }
 
-        public IContactInfo ContactInfo(string name, string username, string email, string phoneNumber)
+        public IContactInfo CreateContactInfo(string name, string username, string email, string phoneNumber)
         {
             return new ContactInfo(name, username, email, phoneNumber);
         }
 
-        public IPresentation Presentation(DateTime date, string topic)
+        public IPresentation CreatePresentation(DateTime date, string lector, string topic)
         {
-            return new Presentation(date, topic);
+            return new Presentation(date, lector, topic);
         }
 
-        public Rank Rank(string owner, int points)
+        public Rank CreateRank(string owner, int points)
         {
             return new Rank(owner, points);
         }
 
-        public IStudent Student(IBook book, IContactInfo contactInfo, IEnumerable<IPresentation> presentations, ITeam team)
+        public IStudent CreateStudent(IContactInfo contactInfo, IEnumerable<IPresentation> presentations, IBook book, string team)
         {
-            return new Student(book, contactInfo, presentations, team);
+            return new Student(contactInfo, presentations, book, team);
         }
 
-        public ITeam Team(string name, IEnumerable<IStudent> members)
+        public ITeam CreateTeam(string name, IEnumerable<IStudent> members)
         {
             return new Team(name, members);
         }

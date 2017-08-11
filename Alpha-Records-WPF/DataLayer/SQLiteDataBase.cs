@@ -3,17 +3,17 @@ using SQLite;
 
 namespace Alpha_Records_WPF.DataLayer
 {
-    class SQLiteDataBase
+    public class SQLiteDataBase
     {
         private const string TABLE_STUDENTS = "STUDENTS";
         private const string COLUMN_CONTACT_INFO = "contact_info";
-        private const string COLUMN_TEAM = "team";
         private const string COLUMN_PRESENTATIONS = "presentations";
+        private const string COLUMN_TEAM = "team";
         private const string COLUMN_BOOK = "book";
 
         private readonly string CREATE_STUDENTS = "CREATE TABLE IF NOT EXISTS " + TABLE_STUDENTS +
-            "(id int, " + COLUMN_CONTACT_INFO + " int, " +
-            COLUMN_TEAM + " int, " + COLUMN_PRESENTATIONS + " int, " + COLUMN_BOOK + " int)";
+            "(id INTEGER PRIMARY KEY AUTOINCREMENT , " + COLUMN_CONTACT_INFO + " INTEGER, " +
+            COLUMN_PRESENTATIONS + " INTEGER, " + COLUMN_BOOK + " TEXT, " + COLUMN_TEAM + " TEXT)";
 
         private const string TABLE_CONTACT_INFOS = "CONTACT_INFOS";
         private const string COLUMN_NAME = "name";
@@ -45,9 +45,9 @@ namespace Alpha_Records_WPF.DataLayer
             "(id int, " + COLUMN_LECTOR + " int, " +
             COLUMN_TOPIC + " text, " + COLUMN_DATE + " text)";
 
-       //private const string TABLE_RANKS = "RANKS";
-       //private const string COLUMN_OWNER = "owner";
-       //private const string COLUMN_POINTS = "points";
+        //private const string TABLE_RANKS = "RANKS";
+        //private const string COLUMN_OWNER = "owner";
+        //private const string COLUMN_POINTS = "points";
 
         public SQLiteDataBase(SQLiteConnection conn)
         {

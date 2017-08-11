@@ -8,10 +8,10 @@ namespace Alpha_Records_WPF.Models
     {
         private string status;
         private DateTime takenOn;
-        private IStudent takenBy;
+        private string takenBy;
 
-        public ManagedBook(string title, string autor, string language, string status, DateTime takenOn, IStudent takenBy)
-            : base(title, autor, language)
+        public ManagedBook(string title, string author, string language, string status, DateTime takenOn, string takenBy)
+            : base(title, author, language)
         {
             Status = status;
             TakenOn = takenOn;
@@ -44,7 +44,7 @@ namespace Alpha_Records_WPF.Models
             }
         }
 
-        public IStudent TakenBy
+        public string TakenBy
         {
 
             get

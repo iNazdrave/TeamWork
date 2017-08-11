@@ -8,6 +8,6 @@ namespace Alpha_Records_WPF.Contracts
 
         DateTime TakenOn { get; set; }
 
-        IStudent TakenBy { get; set; }
+        string TakenBy { get; set; }
     }
 }

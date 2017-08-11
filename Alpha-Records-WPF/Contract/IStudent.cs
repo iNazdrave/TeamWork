@@ -6,7 +6,7 @@ namespace Alpha_Records_WPF.Contracts
     {
         IContactInfo ContactInfo { get; }
 
-        ITeam Team { get; }
+        string Team { get; }
 
         IEnumerable<IPresentation> Presentations { get; }
 
