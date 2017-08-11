@@ -93,8 +93,5 @@ namespace Alpha_Records_WPF.DataLayer
             throw new NotImplementedException();
         }
 
-        private IEnumerable<T> GetData<T>(string url)
-        {
-        }
     }
 }

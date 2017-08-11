@@ -30,11 +30,10 @@ namespace Alpha_Records_WPF.Factory
 
         public IContactInfo CreateContactInfo(string[] data)
         {
-            string name, username, email, phone;
-            name = (data.Length > 0) ? data[0] : string.Empty;
-            username = (data.Length > 1) ? data[1] : string.Empty;
-            email = (data.Length > 2) ? data[2] : string.Empty;
-            phone = (data.Length > 3) ? data[3] : string.Empty;
+            string name = (data.Length > 0) ? data[0] : string.Empty;
+            string username = (data.Length > 1) ? data[1] : string.Empty;
+            string email = (data.Length > 2) ? data[2] : string.Empty;
+            string phone = (data.Length > 3) ? data[3] : string.Empty;
             return new ContactInfo(name, username, email, phone);
         }
 
