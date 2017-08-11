@@ -18,12 +18,17 @@ namespace Alpha_Records_WPF
         {
             InitializeComponent();
             factory = ModelsFactory.Instance;
-            dataManager = ExcelManager.Instance;
+            dataManager = TextFileManager.Instance;
         }
+
+        private void Teams_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Objects_List.ItemsSource = this.dataManager.GetTeams();
+        }
+
 
         private void Ranks_Button_Click(object sender, RoutedEventArgs e)
         {
-            //this.Objects_List.ItemsSource = 
 
         }
 
@@ -34,12 +39,12 @@ namespace Alpha_Records_WPF
 
         private void Library_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Objects_List.ItemsSource = this.dataManager.GetManagedBooks();
         }
 
         private void Students_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Objects_List.ItemsSource = this.dataManager.GetStudents();
+            this.Objects_List.ItemsSource = this.dataManager.GetContactInfos();
         }
 
         public static string UpComingPresentationCheck(IEnumerable<IPresentation> studentPresentations, string message)

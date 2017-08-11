@@ -21,6 +21,7 @@
 
         <Button 
             Content="Login"
-            Click="Login_Button_Click"/>
+            Command="NavigationCommands.GoToPage"
+            CommandParameter="/MainWindow.xaml"/>
     </StackPanel>
 </Page>

@@ -1,5 +1,6 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
+using System.Text;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -40,6 +41,7 @@ namespace Alpha_Records_WPF.Models
                 this.author = value;
             }
         }
+
         public string Language
         {
             get

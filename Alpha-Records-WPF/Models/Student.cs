@@ -1,6 +1,7 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Alpha_Records_WPF.Models
 {

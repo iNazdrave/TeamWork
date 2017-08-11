@@ -1,5 +1,6 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
+using System.Text;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -72,6 +73,16 @@ namespace Alpha_Records_WPF.Models
                 Validator.ValidateNull(value, string.Format(Constants.CannotBeNull, nameof(this.PhoneNumber)));
                 this.phoneNumber = value;
             }
-        }        
+        }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine("Name: " + name);
+            builder.AppendLine("Username: " + username);
+            builder.AppendLine("Email: " + email);
+            builder.AppendLine("Phone: " + phoneNumber);
+            return builder.ToString();
+        }
     }
 }

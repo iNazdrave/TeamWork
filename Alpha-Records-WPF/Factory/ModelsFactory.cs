@@ -28,6 +28,16 @@ namespace Alpha_Records_WPF.Factory
             return new ContactInfo(name, username, email, phoneNumber);
         }
 
+        public IContactInfo CreateContactInfo(string[] data)
+        {
+            string name, username, email, phone;
+            name = (data.Length > 0) ? data[0] : string.Empty;
+            username = (data.Length > 1) ? data[1] : string.Empty;
+            email = (data.Length > 2) ? data[2] : string.Empty;
+            phone = (data.Length > 3) ? data[3] : string.Empty;
+            return new ContactInfo(name, username, email, phone);
+        }
+
         public IPresentation CreatePresentation(DateTime date, string lector, string topic)
         {
             return new Presentation(date, lector, topic);
@@ -46,6 +56,23 @@ namespace Alpha_Records_WPF.Factory
         public ITeam CreateTeam(string name, IEnumerable<IStudent> members)
         {
             return new Team(name, members);
+        }
+
+        public IManagedBook CreateManagedBook(string[] data)
+        {
+            string title, author, language, status, takenBy;
+            DateTime takenOn = new DateTime();
+            title = (data.Length > 0) ? data[0] : string.Empty;
+            author = (data.Length > 1) ? data[1] : string.Empty;
+            language = (data.Length > 2) ? data[2] : string.Empty;
+            status = (data.Length > 3) ? data[3] : string.Empty;
+            if (data.Length > 4)
+            {
+                takenOn = DateTime.Parse(data[4]);
+            }
+
+            takenBy = (data.Length > 5) ? data[5] : string.Empty;
+            return new ManagedBook(title, author, language, status, takenOn, takenBy);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace Alpha_Records_WPF.DataLayer.Contracts
 {
@@ -20,5 +21,8 @@ namespace Alpha_Records_WPF.DataLayer.Contracts
         IEnumerable<IPresentation> GetPresentations();
 
         void AddOrUpdatePresentation(IPresentation presentation);
+
+        IEnumerable<ITeam> GetTeams();
+
     }
 }

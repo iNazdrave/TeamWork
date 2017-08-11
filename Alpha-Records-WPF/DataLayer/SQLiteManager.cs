@@ -65,5 +65,10 @@ namespace Alpha_Records_WPF.DataLayer
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<ITeam> GetTeams()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

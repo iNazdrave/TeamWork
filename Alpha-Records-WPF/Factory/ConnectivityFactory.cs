@@ -1,4 +1,5 @@
 ﻿using Alpha_Records_WPF.Connectivity;
+using Alpha_Records_WPF.Connectivity.Contract;
 
 namespace Alpha_Records_WPF.Factory
 {
@@ -15,14 +16,10 @@ namespace Alpha_Records_WPF.Factory
             }
         }
 
-        public Account CreateAccount(string mail, string password)
+        public TheCampAccount CreateTheCampAccount(string mail, string password)
         {
-            return new Account(mail, password);
+            return new TheCampAccount(mail, password);
         }
 
-        public Connection CreateConnection(Account acc)
-        {
-            return new Connection(acc);
-        }
     }
 }

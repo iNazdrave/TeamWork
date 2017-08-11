@@ -12,6 +12,14 @@
         Name="NavigationPanel"
         Orientation="Vertical">
             <Button
+                x:Name="Teams_Button"
+                Background="CadetBlue"
+                Content="Teams"
+                Margin="4"
+                Width="200"
+                Height="100"
+                Click="Teams_Button_Click"/>
+            <Button
                 x:Name="Ranks_Button"
                 Background="CadetBlue"
                 Content="Rankings"
@@ -48,19 +56,14 @@
             Margin="4"
             Width="280"
             x:Name="Objects_List">
-            <ListBox.ItemTemplateSelector>
-                <DataTemplateSelector>
-                    
-                </DataTemplateSelector>
-            </ListBox.ItemTemplateSelector>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}" />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListBox 
-            Margin="4"
-            x:Name="Details_List"/>
+        <TextBox
+            Text="{Binding ElementName=Objects_List, Path=SelectedItem}"
+            x:Name="Details"/>
     </StackPanel>
 </Window>

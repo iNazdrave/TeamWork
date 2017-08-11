@@ -1,6 +1,7 @@
 ﻿using Alpha_Records_WPF.Contracts;
 using Alpha_Records_WPF.Utils;
 using System;
+using System.Text;
 
 namespace Alpha_Records_WPF.Models
 {
@@ -57,6 +58,20 @@ namespace Alpha_Records_WPF.Models
                 this.takenBy = value;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine("Title: " + Title);
+            builder.AppendLine("Autor: " + Author);
+            builder.AppendLine("Language: " + Language);
+            builder.AppendLine("Status: " + Status);
+            builder.AppendLine("Taken On: " + TakenOn);
+            builder.AppendLine("Taken By: " + TakenBy);
+
+            return builder.ToString();
+        }
+
     }
 }
 

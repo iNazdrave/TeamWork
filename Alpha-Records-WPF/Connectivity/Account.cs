@@ -1,8 +1,11 @@
-﻿using Alpha_Records_WPF.Utils;
+﻿using System;
+using System.Net;
+using Alpha_Records_WPF.Connectivity.Contract;
+using Alpha_Records_WPF.Utils;
 
 namespace Alpha_Records_WPF.Connectivity
 {
-    public class Account
+    public abstract class Account : IConnection
     {
         private string mail;
         private string password;
@@ -38,5 +41,12 @@ namespace Alpha_Records_WPF.Connectivity
                 this.password = value;
             }
         }
+
+        public abstract WebClient Client { get; set; }
+
+        public abstract void Connect();
+
+
+        public abstract void GetData();
     }
 }

@@ -1,8 +1,12 @@
-﻿namespace Alpha_Records_WPF.Connectivity.Contract
+﻿using System.Net;
+
+namespace Alpha_Records_WPF.Connectivity.Contract
 {
     public interface IConnection
     {
-        bool Connect(string url);
+        WebClient Client { get;}
+
+        void Connect();
 
         void GetData();
 
